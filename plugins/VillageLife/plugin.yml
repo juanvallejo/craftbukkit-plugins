@@ -1,0 +1,7 @@
+name: VillageLife
+main: me.cnuapps.minecraft.villagelife.VillageLife
+version: 1.0
+description: Provides starting commands and setup for village server.
+commands:
+  home:
+    description: Teleports the player to 5 5 5 (safe-area for teleports)
