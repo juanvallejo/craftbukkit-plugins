@@ -60,6 +60,7 @@ public class VillageLife extends JavaPlugin {
 			location.setX(Constants.Location.HOME.getX());
 			location.setY(Constants.Location.HOME.getY());
 			location.setZ(Constants.Location.HOME.getZ());
+			player.teleport(location);
 		}
 		
 		return false;

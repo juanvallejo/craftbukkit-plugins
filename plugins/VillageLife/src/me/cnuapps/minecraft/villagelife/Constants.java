@@ -1,7 +1,7 @@
 package me.cnuapps.minecraft.villagelife;
 
 /**
- * Constants to use for this plugin.
+ * Global constants to use for this plugin.
  * 
  * @author juanvallejo
  * @date 3/22/15
