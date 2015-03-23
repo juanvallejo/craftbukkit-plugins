@@ -1,6 +1,7 @@
 package me.cnuapps.minecraft.villagelife;
 
 // import bukkit plugin classes
+import org.bukkit.Location;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -50,11 +51,15 @@ public class VillageLife extends JavaPlugin {
 			return false;
 		}
 		
-		Player player = (Player)sender;
+		Player player 		= (Player)sender;
+		Location location 	= player.getLocation();
 		
 		// if player requests home teleport, teleport player to home
 		if(label.equalsIgnoreCase("home")) {
-			player.sendMessage("This is a test, from the plugin");		
+			player.sendMessage("A magical force teleports you to a safe area.");
+			location.setX(Constants.Location.HOME.getX());
+			location.setY(Constants.Location.HOME.getY());
+			location.setZ(Constants.Location.HOME.getZ());
 		}
 		
 		return false;
