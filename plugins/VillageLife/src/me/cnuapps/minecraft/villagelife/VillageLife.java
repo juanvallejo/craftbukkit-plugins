@@ -57,7 +57,6 @@ public class VillageLife extends JavaPlugin {
 		// if player requests home teleport, teleport player to home
 		if(label.equalsIgnoreCase("home") || label.equalsIgnoreCase("spawn") || label.equalsIgnoreCase("safe") || (label.equalsIgnoreCase("5") && args.length == 2 && args[0].equals("5") && args[1].equals("5"))) {
 			player.sendMessage("A magical force teleports you to a safe area.");
-			player.sendMessage("You have been teleported to " + Constants.Location.HOME.getY());
 			location.setX(Constants.Location.HOME.getX());
 			location.setY(Constants.Location.HOME.getY());
 			location.setZ(Constants.Location.HOME.getZ());
