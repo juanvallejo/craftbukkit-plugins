@@ -11,7 +11,7 @@ public class Constants {
 
 	public static enum Location {
 
-		HOME(5, 5, 5);
+		HOME(5, 7, 5);
 
 		private int x;
 		private int y;
